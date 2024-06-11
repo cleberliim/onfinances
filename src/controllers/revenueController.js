@@ -26,7 +26,7 @@ const createRevenue = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(201).json({ message: "Revenue created successfully" });
+    res.status(201).json({ message: "Receita criada com sucesso" });
   });
 };
 
@@ -38,7 +38,7 @@ const updateRevenue = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(200).json({ message: "Revenue updated successfully" });
+    res.status(200).json({ message: "Receita atualizada com sucesso" });
   });
 };
 
@@ -48,7 +48,7 @@ const deleteRevenue = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(200).json({ message: "Revenue deleted successfully" });
+    res.status(200).json({ message: "Receita excluída com sucesso" });
   });
 };
 

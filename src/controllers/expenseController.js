@@ -26,7 +26,7 @@ const createExpense = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(201).json({ message: "Expense created successfully" });
+    res.status(201).json({ message: "Despesa criada com sucesso" });
   });
 };
 
@@ -38,7 +38,7 @@ const updateExpense = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(200).json({ message: "Expense updated successfully" });
+    res.status(200).json({ message: "Despesa atualizada com sucesso" });
   });
 };
 
@@ -48,7 +48,7 @@ const deleteExpense = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(200).json({ message: "Expense deleted successfully" });
+    res.status(200).json({ message: "Despesa excluída com sucesso" });
   });
 };
 

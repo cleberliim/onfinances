@@ -26,7 +26,7 @@ const createEntry = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(201).json({ message: "Entry created successfully" });
+    res.status(201).json({ message: "Entrada criada com sucesso" });
   });
 };
 
@@ -38,7 +38,7 @@ const updateEntry = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(200).json({ message: "Entry updated successfully" });
+    res.status(200).json({ message: "Entrada atualizada com sucesso" });
   });
 };
 
@@ -48,7 +48,7 @@ const deleteEntry = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-    res.status(200).json({ message: "Entry deleted successfully" });
+    res.status(200).json({ message: "Entrada excluída com sucesso" });
   });
 };
 
