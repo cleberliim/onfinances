@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+onst mysql = require('mysql');
 const config = require('../db/config');
 
 // Crie um pool de conexões com as configurações fornecidas
