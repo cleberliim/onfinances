@@ -1,5 +1,6 @@
 const Entry = require("../models/Entry");
 
+//lista todas as entradas
 const getAllEntries = (req, res) => {
   Entry.getAll((err, entries) => {
     if (err) {
@@ -9,6 +10,7 @@ const getAllEntries = (req, res) => {
   });
 };
 
+//lista todas as entradas por id
 const getEntryById = (req, res) => {
   const { id } = req.params;
   Entry.getById(id, (err, entry) => {
@@ -19,6 +21,7 @@ const getEntryById = (req, res) => {
   });
 };
 
+//cria uma entrada
 const createEntry = (req, res) => {
   const { description, category, price, createdAt } = req.body;
   const newEntry = { description, category, price, createdAt };
@@ -30,6 +33,7 @@ const createEntry = (req, res) => {
   });
 };
 
+//atualiza entrada
 const updateEntry = (req, res) => {
   const { id } = req.params;
   const { description, category, price, createdAt } = req.body;
@@ -42,6 +46,7 @@ const updateEntry = (req, res) => {
   });
 };
 
+//atualiza delete
 const deleteEntry = (req, res) => {
   const { id } = req.params;
   Entry.delete(id, (err) => {

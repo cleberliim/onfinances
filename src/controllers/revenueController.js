@@ -1,5 +1,6 @@
 const Revenue = require("../models/Revenue");
 
+//lista todas as receitas
 const getAllRevenues = (req, res) => {
   Revenue.getAll((err, revenues) => {
     if (err) {
@@ -9,6 +10,7 @@ const getAllRevenues = (req, res) => {
   });
 };
 
+//lista as receitas por ID
 const getRevenueById = (req, res) => {
   const { id } = req.params;
   Revenue.getById(id, (err, revenue) => {
@@ -19,6 +21,7 @@ const getRevenueById = (req, res) => {
   });
 };
 
+//Cria uma receita  por ID
 const createRevenue = (req, res) => {
   const { description, category, price, createdAt } = req.body;
   const newRevenue = { description, category, price, createdAt };
@@ -30,6 +33,7 @@ const createRevenue = (req, res) => {
   });
 };
 
+//Atualiza uma receita  por ID
 const updateRevenue = (req, res) => {
   const { id } = req.params;
   const { description, category, price, createdAt } = req.body;
@@ -42,6 +46,7 @@ const updateRevenue = (req, res) => {
   });
 };
 
+//Deleta uma receita  por ID
 const deleteRevenue = (req, res) => {
   const { id } = req.params;
   Revenue.delete(id, (err) => {

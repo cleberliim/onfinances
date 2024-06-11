@@ -1,5 +1,6 @@
 const Expense = require("../models/Expense");
 
+//lista todas as despesas 
 const getAllExpenses = (req, res) => {
   Expense.getAll((err, expenses) => {
     if (err) {
@@ -9,6 +10,8 @@ const getAllExpenses = (req, res) => {
   });
 };
 
+
+//lista todas as despesas por id
 const getExpenseById = (req, res) => {
   const { id } = req.params;
   Expense.getById(id, (err, expense) => {
@@ -19,6 +22,8 @@ const getExpenseById = (req, res) => {
   });
 };
 
+
+//cria uma despesa
 const createExpense = (req, res) => {
   const { description, category, price, createdAt } = req.body;
   const newExpense = { description, category, price, createdAt };
@@ -30,6 +35,7 @@ const createExpense = (req, res) => {
   });
 };
 
+//atualiza uma despesa
 const updateExpense = (req, res) => {
   const { id } = req.params;
   const { description, category, price, createdAt } = req.body;
@@ -41,6 +47,8 @@ const updateExpense = (req, res) => {
     res.status(200).json({ message: "Despesa atualizada com sucesso" });
   });
 };
+
+//deleta despesa
 
 const deleteExpense = (req, res) => {
   const { id } = req.params;
