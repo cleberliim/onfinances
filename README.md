@@ -6,31 +6,23 @@ Onfinances/
 ├── db/
 │ └── config.js
 ├── controllers/
-│ ├── accountsPayableController.js
-│ ├── accountsReceivableController.js
-│ ├── monthController.js
-│ ├── revenueController.js
-│ └── userController.js
+│ ├── entryController.js
+│ ├── expenseController.js
+│ └── revenueController.js
 ├── middlewares/
 │ └── errorHandler.js
 ├── models/
-│ ├── Account.js
-│ ├── AccountsReceivable.js
-│ ├── Month.js
-│ ├── Revenue.js
-│ └── User.js
+│ ├── Entry.js
+│ ├── Expense.js
+│ └── Revenue.js
 ├── repositories/
-│ ├── accountRepository.js
-│ ├── accountsReceivableRepository.js
-│ ├── monthRepository.js
-│ ├── revenueRepository.js
-│ └── userRepository.js
+│ ├── entryRepository.js
+│ ├── expenseRepository.js
+│ └── revenueRepository.js
 ├── routes/
-│ ├── accountsPayableRoutes.js
-│ ├── accountsReceivableRoutes.js
+│ ├── entryRoutes.js
+│ ├── expenseRoutes.js
 │ ├── index.js
-│ ├── monthRoutes.js
-│ ├── revenueRoutes.js
-│ └── userRoutes.js
+│ └── revenueRoutes.js
 └── utils/
 └── db.js
