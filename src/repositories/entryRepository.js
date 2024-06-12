@@ -30,6 +30,15 @@ class EntryRepository {
   static delete(id, callback) {
     db.query("DELETE FROM entries WHERE id = ?", [id], callback);
   }
+
+  static search(term, callback) {
+    const searchTerm = `%${term}%`;
+    db.query(
+      "SELECT * FROM entries WHERE id = ? OR description LIKE ?",
+      [term, searchTerm],
+      callback
+    );
+  }
 }
 
 module.exports = EntryRepository;

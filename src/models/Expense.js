@@ -20,6 +20,10 @@ class Expense {
   static delete(id, callback) {
     ExpenseRepository.delete(id, callback);
   }
+
+  static search(term, callback) {
+    ExpenseRepository.search(term, callback);
+  }
 }
 
 module.exports = Expense;

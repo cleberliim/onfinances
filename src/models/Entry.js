@@ -20,6 +20,10 @@ class Entry {
   static delete(id, callback) {
     EntryRepository.delete(id, callback);
   }
+
+  static search(term, callback) {
+    EntryRepository.search(term, callback);
+  }
 }
 
 module.exports = Entry;

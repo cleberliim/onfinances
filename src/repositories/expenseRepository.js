@@ -30,6 +30,15 @@ class ExpenseRepository {
   static delete(id, callback) {
     db.query("DELETE FROM expenses WHERE id = ?", [id], callback);
   }
+
+  static search(term, callback) {
+    const searchTerm = `%${term}%`;
+    db.query(
+      "SELECT * FROM expenses WHERE id = ? OR description LIKE ?",
+      [term, searchTerm],
+      callback
+    );
+  }
 }
 
 module.exports = ExpenseRepository;
