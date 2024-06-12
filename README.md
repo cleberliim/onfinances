@@ -2,7 +2,6 @@
 
 ## Estrutura do Projeto
 
-
 ### Visão Geral
 
 - **.env**: Variáveis de ambiente.
@@ -11,15 +10,12 @@
   - **app.js**: Arquivo principal da aplicação.
   - **db/**: Configuração do banco de dados.
     - **config.js**: Configurações do banco de dados.
-
   - **controllers/**: Controladores da aplicação.
     - **entryController.js**: Lida com operações relacionadas a entradas.
     - **expenseController.js**: Lida com operações relacionadas a despesas.
     - **searchController.js**: Lida com operações de busca.
-
   - **middlewares/**: Funções middleware.
     - **errorHandler.js**: Middleware de tratamento de erros.
-    
   - **models/**: Modelos do banco de dados.
     - **Entry.js**: Modelo de entrada.
     - **Expense.js**: Modelo de despesa.
