@@ -1,4 +1,4 @@
-# Onfinances
+# Onfinances - Backend
 
 ## Estrutura do Projeto
 
