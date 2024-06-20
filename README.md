@@ -32,21 +32,21 @@
 
 ## Rotas para Entradas (Entries)
 
-- Listar todas as entradas: GET http://localhost:3000/api/entries
-- Obter uma entrada por ID: GET http://localhost:3000/api/entries/:id
-- Criar uma nova entrada: POST http://localhost:3000/api/entries
-- Atualizar uma entrada por ID: PUT http://localhost:3000/api/entries/:id
-- Deletar uma entrada por ID: DELETE http://localhost:3000/api/entries/:id
+- **Listar todas as entradas:** GET http://localhost:3000/api/entries
+- **Obter uma entrada por ID:** GET http://localhost:3000/api/entries/:id
+- **Criar uma nova entrada:** POST http://localhost:3000/api/entries
+- **Atualizar uma entrada por ID:** PUT http://localhost:3000/api/entries/:id
+- **Deletar uma entrada por ID:** DELETE http://localhost:3000/api/entries/:id
 
 ## Rotas para Contas a Pagar (Expenses)
 
-- Listar todas as contas a pagar: GET http://localhost:3000/api/expenses
-- Obter uma conta a pagar por ID: GET http://localhost:3000/api/expenses/:id
-- Criar uma nova conta a pagar: POST http://localhost:3000/api/expenses
-- Atualizar uma conta a pagar por ID: PUT http://localhost:3000/api/expenses/:id
-- Deletar uma conta a pagar por ID: DELETE http://localhost:3000/api/expenses/:id
+- **Listar todas as contas a pagar:** GET http://localhost:3000/api/expenses
+- **Obter uma conta a pagar por ID:** GET http://localhost:3000/api/expenses/:id
+- **Criar uma nova conta a pagar:** POST http://localhost:3000/api/expenses
+- **Atualizar uma conta a pagar por ID:** PUT http://localhost:3000/api/expenses/:id
+- **Deletar uma conta a pagar por ID:** DELETE http://localhost:3000/api/expenses/:id
 
 ## Rota de Pesquisa
 
-- Pesquisar entradas e contas a pagar por ID ou descrição: GET http://localhost:3000/api/search?term={termo_de_pesquisa}
+- **Pesquisar entradas e contas a pagar por ID ou descrição:** GET http://localhost:3000/api/search?term={termo_de_pesquisa}
 - Substitua {termo_de_pesquisa} pelo termo que deseja buscar.
