@@ -1,13 +1,17 @@
 const express = require("express");
+const cors = require("cors");
 const morgan = require("morgan");
 const config = require("./db/config");
 const routes = require("./routes");
 const errorHandler = require("../src/middleware/errorHandler");
 
+
 const app = express();
 
 // Middleware para parsear JSON
 app.use(express.json());
+
+app.use(cors());
 
 // Middleware de logging HTTP com morgan
 app.use(morgan("combined"));
